@@ -1,0 +1,24 @@
+"""Tests for the test1 module."""
+import pytest
+
+from test1 import test1
+
+
+# Fixture example
+@pytest.fixture
+def an_object():
+    return {}
+
+
+def test_something():
+    assert True
+
+
+def test_with_error():
+    with pytest.raises(ValueError):
+        # Do something that raises a ValueError
+        raise(ValueError)
+
+
+def test_test1(an_object):
+    assert an_object == {}
